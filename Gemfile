@@ -58,6 +58,8 @@ gem 'normalize-rails'
 # Needed for Heroku deployement
 gem 'rails_12factor'
 
+gem 'newrelic_rpm'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
