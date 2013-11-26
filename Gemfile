@@ -60,6 +60,8 @@ gem 'rails_12factor'
 
 gem 'newrelic_rpm'
 
+gem 'pry'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
