@@ -5,6 +5,7 @@
 
 .centered {
   text-align: center;
+  margin: auto auto;
 }
 
 .rounded {
@@ -66,6 +67,7 @@
   border: 1px solid gray;
   border-radius: 5px;
   padding: 10px;
+  clear: both;
 }
 
 .description-wrapper {
@@ -78,6 +80,8 @@
   @extend .large-3;
   @extend .columns;
   @extend .large-centered;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .review-display {
@@ -110,4 +114,10 @@
   @extend .large-centered;
   @extend .large-12;
   @extend .columns;
+}
+
+// Paginator
+.pagination-wrapper {
+  padding: 15px;
+  margin: 5px;
 }

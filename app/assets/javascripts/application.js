@@ -17,3 +17,15 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+jQuery(function() {
+  if ($('.pagination-centered').length) {
+    $(window).scroll(function() {
+      var url = $('.pagination-centered span.next').children().attr('href');
+      if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 500) {
+        $('.pagination-centered').text("Fetching more products...");
+        return $.getScript(url);
+      }
+    });
+  }
+});
